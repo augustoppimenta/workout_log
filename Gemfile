@@ -27,6 +27,10 @@ gem 'bourbon', '~> 4.2', '>= 4.2.6'
 
 gem 'neat', '~> 1.7', '>= 1.7.2'
 
+gem 'bitters', '~> 1.2'
+
+gem 'thor', '~> 0.19.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
