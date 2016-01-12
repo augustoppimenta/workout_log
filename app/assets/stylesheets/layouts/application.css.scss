@@ -1,6 +1,7 @@
-.main{
+section.main{
   @include outer-container;
   padding: 50px;
+  border-radius: 10px;
 }
 section {
     background-color: #E0E0E0;
@@ -26,9 +27,7 @@ input[type=text]{
 input[type=date]{
    height: 40px;
 }
-input[type=submit]{
-  margin-top: 23px;
-}
+
 form fieldset{
   float: left;
   width: 20%;
@@ -38,6 +37,10 @@ hr{
   height:2px;
   text-align:center;
   border:0px;
-  color:#ff9999;
   background:#000000;
+}
+
+td{
+  background-color: white;
+  padding: 10px;
 }

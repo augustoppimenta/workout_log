@@ -1,7 +1,7 @@
 <h3>Insert a item</h3>
 <%= form_for Event.new do |f| %>
   <fieldset>Time: <%= f.number_field :period %></fieldset>
-  <fieldset>Type: <%= f.text_field :title  %></fieldset>
+  <fieldset>Type: <%= f.text_field :title %></fieldset>
   <fieldset>Date: <%= f.date_field :morning   %></fieldset>
-  <fieldset><%= f.submit  %></fieldset>
+  <fieldset style="margin-top: 23px;"><%= f.submit  %></fieldset>
 <% end   %>

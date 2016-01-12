@@ -13,13 +13,13 @@
   </tr>
 
   <% @events.each do |event| %>
-  <tr>
-      <td><%= event.period %>h</td>
-      <td><%= event.title %></td>
-      <td><%= event.morning %></td>
-      <td><%= link_to 'Delete', event,method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
+    <tr>
+        <td><%= event.period %>h</td>
+        <td><%= event.title %></td>
+        <td><%= event.morning %></td>
+        <td><%= button_to 'delete', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
 </table>
 
 

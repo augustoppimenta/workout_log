@@ -7,9 +7,8 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(event_params)
-
     @event.save
-    redirect_to events_path
+    redirect_to events_path, notice: 'Work create.'
   end
 
   def destroy
