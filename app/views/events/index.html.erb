@@ -2,25 +2,28 @@
 
 <%= render 'new' %>
 
+<hr style='' />
 
 <table>
   <tr>
     <th>Tempo</th>
     <th>Nome</th>
     <th>Data</th>
+    <th></th>
   </tr>
 
   <% @events.each do |event| %>
   <tr>
-      <td><%= event.period %></td>
+      <td><%= event.period %>h</td>
       <td><%= event.title %></td>
       <td><%= event.morning %></td>
-      <td><%= link_to 'Deletar', event,method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to 'Delete', event,method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
 
 
-
-  <h3><%= @events.sum('period') %> hous of exercices</h3>
+</br>
+</br>
+<h2><%= @events.sum('period') %> hous of exercices</h2>
 
