@@ -17,4 +17,10 @@
       <td><%= event.morning %></td>
       <td><%= link_to 'Deletar', event,method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
-<% end %>
+  <% end %>
+</table>
+
+
+
+  <h3><%= @events.sum('period') %> hous of exercices</h3>
+
