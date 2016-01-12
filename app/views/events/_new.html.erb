@@ -1,0 +1,7 @@
+<h1>New Event</h1>
+<%= form_for Event.new do |f| %>
+  Time: <%= f.number_field :period %>
+  Type: <%= f.text_field :title  %>
+  Date: <%= f.date_field :morning   %>
+  <%= f.submit  %>
+<% end   %>
