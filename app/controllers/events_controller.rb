@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:destroy]
   def index
-    @events = Event.all.order('created_at DESC')
+    @events = Event.all.order(params[:sort])
   end
 
 
