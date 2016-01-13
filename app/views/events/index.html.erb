@@ -16,7 +16,7 @@
     <tr>
         <td><%= event.period %>h</td>
         <td><%= event.title %></td>
-        <td><%= event.morning %></td>
+        <td><%= event.morning.strftime("%d/%m/%Y") %></td>
         <td><%= button_to 'delete', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
